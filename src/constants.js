@@ -33,7 +33,7 @@ const INITIAL_STATE = {
         width: 200,
         height: 320,
       },
-      image: "public/images/front.svg",
+      image: "images/front.svg",
     },
     {
       id: 1,
@@ -46,7 +46,7 @@ const INITIAL_STATE = {
         width: 200,
         height: 320,
       },
-      image: "public/images/back.svg",
+      image: "images/back.svg",
     },
     {
       id: 2,
@@ -54,7 +54,7 @@ const INITIAL_STATE = {
       width: 50,
       height: 100,
       area: { top: 70, left: 170, width: 75, height: 120 },
-      image: "public/images/left.svg",
+      image: "images/left.svg",
     },
     {
       id: 3,
@@ -62,7 +62,7 @@ const INITIAL_STATE = {
       width: 50,
       height: 100,
       area: { top: 70, left: 153, width: 75, height: 120 },
-      image: "public/images/right.svg",
+      image: "images/right.svg",
     },
   ],
   showPlacement: false,

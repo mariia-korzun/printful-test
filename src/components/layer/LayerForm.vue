@@ -1,11 +1,11 @@
 <template>
   <div class="layer-form">
     <div class="layer-input">
-      <label :for="'layer-fill-' + layer.id">Color</label>
+      <label class="placement-input-label" :for="'layer-fill-' + layer.id">Color</label>
       <input :name="'layer-fill-' + layer.id" type="color" v-model="fill" />
     </div>
     <div class="layer-input">
-      <label :for="'layer-width-' + layer.id">Width {{ width }}</label>
+      <label class="placement-input-label" :for="'layer-width-' + layer.id">Width {{ width }}</label>
       <input
         :name="'layer-width-' + layer.id"
         type="range"
@@ -15,7 +15,7 @@
       />
     </div>
     <div class="layer-input">
-      <label :for="'layer-left-' + layer.id">Height {{ height }}</label>
+      <label class="placement-input-label" :for="'layer-left-' + layer.id">Height {{ height }}</label>
       <input
         :name="'layer-height-' + layer.id"
         type="range"
@@ -25,7 +25,7 @@
       />
     </div>
     <div class="layer-input">
-      <label :for="'layer-top-' + layer.id">Left {{ left }}</label>
+      <label class="placement-input-label" :for="'layer-top-' + layer.id">Left {{ left }}</label>
       <input
         :name="'layer-left-' + layer.id"
         type="range"
@@ -35,7 +35,7 @@
       />
     </div>
     <div class="layer-input">
-      <label :for="'layer-height-' + layer.id">Top {{ top }}</label>
+      <label class="placement-input-label" :for="'layer-height-' + layer.id">Top {{ top }}</label>
       <input
         :name="'layer-top-' + layer.id"
         type="range"
@@ -135,5 +135,8 @@ export default {
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+.placement-input-label {
+  display: block;
 }
 </style>

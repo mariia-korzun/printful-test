@@ -4,7 +4,7 @@
     <canvas :ref="placement.name" width="400" height="400"></canvas>
     <div class="placement-input">
       <div>
-        <label class="inputLabel" :for="placement.name + '-width'"
+        <label class="placement-input-label" :for="placement.name + '-width'"
           >Width {{ width }}</label
         >
         <input
@@ -16,7 +16,7 @@
         />
       </div>
       <div class="placement-input">
-        <label :for="placement.name + '-width'">Height {{ height }}</label>
+        <label class="placement-input-label" :for="placement.name + '-width'">Height {{ height }}</label>
         <input
           :name="placement.name + '-height'"
           type="range"
@@ -200,7 +200,7 @@ export default {
 .placement-input {
   margin-top: 20px;
 }
-.inputLabel {
-  width: 100px;
+.placement-input-label {
+  display: block;
 }
 </style>
